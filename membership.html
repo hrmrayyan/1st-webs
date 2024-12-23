@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Management System - Membership</title>
+    <style>
+        /* General page styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header and navigation styles */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #444;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        /* Main content styling */
+        main {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* Membership section styles */
+        .membership {
+            text-align: center;
+        }
+
+        .membership img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .membership h2 {
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+
+        /* Membership plans container styling */
+        .membership-plans {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+            flex-wrap: wrap; /* Makes the plans stack on small screens */
+        }
+
+        .plan {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .plan:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .plan h3 {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .plan p {
+            font-size: 1.2em;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .plan button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1.1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .plan button:hover {
+            background-color: #555;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav ul {
+                padding-left: 0;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .membership-plans {
+                flex-direction: column; /* Stack plans vertically on small screens */
+                gap: 20px;
+            }
+
+            .plan {
+                width: 90%; /* Take full width of the container on small screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Membership Options</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="membership">
+            <img src="gym interior 2.jpg" alt="Membership Plans" width="440" height="267">
+            <img src="gym interior.jpeg" alt="Gym Interior" width="400" height="265">
+            <img src="th.jpeg" alt="Gym Overview" width="400">
+
+            <h2>Choose Your Membership Plan</h2>
+
+            <div class="membership-plans">
+                <div class="plan">
+                    <h3>Basic Plan</h3>
+                    <p>Access to gym facilities</p>
+                    <p>Price: 4000 PKR/month</p>
+                    <button onclick="alert('You selected Basic Plan!')">Select</button>
+                </div>
+                <div class="plan">
+                    <h3>Premium Plan</h3>
+                    <p>Access to gym facilities + Group classes</p>
+                    <p>Price: 6000 PKR/month</p>
+                    <button onclick="alert('You selected Premium Plan!')">Select</button>
+                </div>
+                <div class="plan">
+                    <h3>VIP Plan</h3>
+                    <p>All benefits of Premium Plan + Personal Trainer</p>
+                    <p>Price: 9000 PKR/month</p>
+                    <button onclick="alert('You selected VIP Plan!')">Select</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Gym Management System</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
