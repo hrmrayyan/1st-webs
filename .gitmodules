@@ -1,0 +1,3 @@
+[submodule "rayyan"]
+	path = rayyan
+	url = https://github.com/username/rayyan.git
